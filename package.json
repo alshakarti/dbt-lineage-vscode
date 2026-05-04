@@ -3,7 +3,12 @@
   "displayName": "dbt Lineage",
   "description": "Interactive dbt model lineage visualization — upstream/downstream DAG graph in the VS Code sidebar",
   "version": "0.1.0",
-  "publisher": "dbt-lineage",
+  "publisher": "Alshakarti",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/YOUR_GITHUB_USERNAME/dbt-lineage-vscode"
+  },
   "engines": {
     "vscode": "^1.85.0"
   },
@@ -70,15 +75,44 @@
         },
         "dbtLineage.defaultDepth": {
           "type": "number",
-          "default": 3,
-          "minimum": 1,
-          "maximum": 10,
-          "description": "Default number of hops to show upstream and downstream from the focused model."
+          "default": 0,
+          "minimum": 0,
+          "description": "Number of hops to show from the focused model (0 = unlimited)."
         },
         "dbtLineage.manifestPath": {
           "type": "string",
           "default": "",
           "description": "Override path to manifest.json (relative to workspace root). Leave empty to auto-detect from target/manifest.json."
+        },
+        "dbtLineage.colors.source": {
+          "type": "string",
+          "default": "#1e8a65",
+          "description": "Color for source nodes."
+        },
+        "dbtLineage.colors.table": {
+          "type": "string",
+          "default": "#216595",
+          "description": "Color for models materialized as tables."
+        },
+        "dbtLineage.colors.view": {
+          "type": "string",
+          "default": "#9e94d5",
+          "description": "Color for models materialized as views."
+        },
+        "dbtLineage.colors.incremental": {
+          "type": "string",
+          "default": "#db704b",
+          "description": "Color for incremental models."
+        },
+        "dbtLineage.colors.ephemeral": {
+          "type": "string",
+          "default": "#6b7280",
+          "description": "Color for ephemeral models."
+        },
+        "dbtLineage.colors.materialized_view": {
+          "type": "string",
+          "default": "#b3013f",
+          "description": "Color for models materialized as materialized views."
         }
       }
     }
