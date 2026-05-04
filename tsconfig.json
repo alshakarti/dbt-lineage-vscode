@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "commonjs",
+    "lib": ["ES2022"],
+    "strict": true,
+    "outDir": "dist",
+    "rootDir": "src",
+    "skipLibCheck": true,
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true
+  },
+  "include": [
+    "src/extension.ts",
+    "src/manifestParser.ts",
+    "src/liveParser.ts",
+    "src/lineagePanel.ts",
+    "src/projectFinder.ts",
+    "src/types.ts"
+  ],
+  "exclude": [
+    "src/webview/**",
+    "node_modules",
+    "dist"
+  ]
+}

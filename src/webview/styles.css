@@ -1,0 +1,39 @@
+/* React Flow controls (zoom in/out/fit) */
+.react-flow__controls {
+  box-shadow: none;
+  border: 1px solid #d0d0d0;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.react-flow__controls-button {
+  background: #e1e1e0;
+  border-bottom: 1px solid #d0d0d0;
+  width: 24px;
+  height: 24px;
+  padding: 4px;
+}
+
+.react-flow__controls-button:last-child {
+  border-bottom: none;
+}
+
+.react-flow__controls-button:hover {
+  background: #d4d4d3;
+}
+
+.react-flow__controls-button svg {
+  fill: #333;
+  max-width: 12px;
+  max-height: 12px;
+}
+
+/* Remove default React Flow edge label background */
+.react-flow__edge-textbg {
+  fill: transparent;
+}
+
+/* Ensure panel background is consistent */
+.react-flow__panel {
+  margin: 8px;
+}
